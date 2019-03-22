@@ -14,7 +14,8 @@
 		</pages>
 	</Carousel>
 	<Button 
-		text="Saludar"  press="onShowHello" />
+		text="{i18n>showHelloButtonText}"  
+		press="onShowHello" />
 	<Input
 		value="{helloPanel>/recipient/name}"
 		description="Hello {helloPanel>/recipient/name}"
