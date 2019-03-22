@@ -25,9 +25,16 @@
 			oImage.setHeight("400px");
 			*/
 
-			sap.ui.xmlview({
+			/*sap.ui.xmlview({
                 viewName: "opensap.myapp.view.App"
             }).placeAt("content");
+            // Al implementar el componente ya no se debe determina la raiz de la vista en el archivo INDEX
+            // entonces...the component will now manage the display of the app view.
+            */
+			new sap.ui.core.ComponentContainer({
+					name : "opensap.myapp"
+				}).placeAt("content");
+
 
 			});
 		</script>
