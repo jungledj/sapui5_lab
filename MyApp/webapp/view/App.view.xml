@@ -1,0 +1,8 @@
+<mvc:View 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m" 
+	displayBlock="true">
+	<Image 
+		src="http://static.t13.cl/images/sizes/1200x675/mgr_homero-simpson.jpg" 
+		height="400px"/>
+</mvc:View>

@@ -11,17 +11,23 @@
 			data-sap-ui-theme="sap_bluecrystal"
 			data-sap-ui-libs="sap.m"
 			data-sap-ui-compatVersion="edge"
-			data-sap-ui-preload="async">
+			data-sap-ui-preload="async"
+    		data-sap-ui-resourceroots='{"opensap.myapp": "./"}'>
 		</script>
 
 		<script>
 			sap.ui.getCore().attachInit(function () {
             //alert("SAPUI5 ta listo");
 
-            var oImage = new sap.m.Image({
+            /* var oImage = new sap.m.Image({
                 src: "http://static.t13.cl/images/sizes/1200x675/mgr_homero-simpson.jpg"
                 }).placeAt("content");
 			oImage.setHeight("400px");
+			*/
+
+			sap.ui.xmlview({
+                viewName: "opensap.myapp.view.App"
+            }).placeAt("content");
 
 			});
 		</script>
