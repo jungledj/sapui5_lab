@@ -66,9 +66,11 @@
 									<ToolbarSpacer/>
 									<Button
 										text="{i18n>layoutPublishButton}"
+										icon="sap-icon://outbox"
 										type="Accept"/>
 									<Button
-										text="{i18n>layoutDraftButton}"/>
+										text="{i18n>layoutDraftButton}"
+										icon="sap-icon://save" />
 								</Toolbar>
 							</IconTabFilter>
 						</items>
