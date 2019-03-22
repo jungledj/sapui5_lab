@@ -1,24 +1,32 @@
-<mvc:View 
-	xmlns:mvc="sap.ui.core.mvc" 
-	xmlns="sap.m" 
-	displayBlock="true"
-	controllerName="opensap.myapp.controller.App">
-	<Carousel>
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" displayBlock="true" controllerName="opensap.myapp.controller.App">
+	<App>
 		<pages>
-			<Image 
-				src="http://static.t13.cl/images/sizes/1200x675/mgr_homero-simpson.jpg" 
-				height="400px"/>
-			<Image 
-				src="https://cde.publimetro.e3.pe/ima/0/0/0/5/7/57838.jpg" 
-				height="400px"/>
+			<Page title="openSAP - Developing with SAPUI5">
+				<content>
+					<IconTabBar id="idTopLevelIconTabBar">
+						<items>
+							<IconTabFilter 
+								id="start" 
+								text="{i18n>gettingStartedFilter}">
+								<Carousel>
+									<pages>
+										<Image src="http://static.t13.cl/images/sizes/1200x675/mgr_homero-simpson.jpg" 
+										height="400px"/>
+										<Image src="https://cde.publimetro.e3.pe/ima/0/0/0/5/7/57838.jpg" 
+										height="400px"/>
+									</pages>
+								</Carousel>
+								<Button text="{i18n>showHelloButtonText}" 
+										press="onShowHello"/>
+								<Input	value="{helloPanel>/recipient/name}" 
+										description="Hello {helloPanel>/recipient/name}" 
+										valueLiveUpdate="true" 
+										width="60%"/>
+							</IconTabFilter>
+						</items>
+					</IconTabBar>
+				</content>
+			</Page>
 		</pages>
-	</Carousel>
-	<Button 
-		text="{i18n>showHelloButtonText}"  
-		press="onShowHello" />
-	<Input
-		value="{helloPanel>/recipient/name}"
-		description="Hello {helloPanel>/recipient/name}"
-		valueLiveUpdate="true"
-		width="60%"/>
+	</App>
 </mvc:View>
