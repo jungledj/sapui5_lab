@@ -2,7 +2,14 @@
 	xmlns:mvc="sap.ui.core.mvc" 
 	xmlns="sap.m" 
 	displayBlock="true">
-	<Image 
-		src="http://static.t13.cl/images/sizes/1200x675/mgr_homero-simpson.jpg" 
-		height="400px"/>
+	<Carousel>
+		<pages>
+			<Image 
+				src="http://static.t13.cl/images/sizes/1200x675/mgr_homero-simpson.jpg" 
+				height="400px"/>
+			<Image 
+				src="https://cde.publimetro.e3.pe/ima/0/0/0/5/7/57838.jpg" 
+				height="400px"/>
+		</pages>
+	</Carousel>
 </mvc:View>
