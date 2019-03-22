@@ -13,5 +13,11 @@
 				height="400px"/>
 		</pages>
 	</Carousel>
-	<Button text="Saludar"  press="onShowHello" />
+	<Button 
+		text="Saludar"  press="onShowHello" />
+	<Input
+		value="{helloPanel>/recipient/name}"
+		description="Hello {helloPanel>/recipient/name}"
+		valueLiveUpdate="true"
+		width="60%"/>
 </mvc:View>
